@@ -1,3 +1,4 @@
 [submodule "cs480/hw1"]
 	path = cs480/hw1
 	url = git@github.com:osu-cs480-sp21/assignment-1-detjensrobert.git
+	branch = main
