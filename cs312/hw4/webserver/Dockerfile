@@ -2,9 +2,11 @@ FROM alpine:latest
 
 RUN apk add nodejs
 
-COPY Dockerfile /server/Dockerfile
-COPY server.js /server/server.js
+WORKDIR /server
+
+COPY Dockerfile Dockerfile
+COPY server.js server.js
 
 EXPOSE 8080
 
-ENTRYPOINT exec node /server/server.js
+ENTRYPOINT ["node", "server.js"]
