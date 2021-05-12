@@ -32,10 +32,10 @@ header-includes:
 
 #### SouthRouter
 
-- Default Gateway: 192.168.3.1/32
+- Default Gateway: 192.168.3.125/32
   - X1
     - Network: 192.168.4.0/24
-    - IP Address: 192.168.4.1/32
+    - IP Address: 192.168.4.20/32
   - X2
     - Network: 192.168.3.124/30
     - IP Address: 192.168.3.126/32
