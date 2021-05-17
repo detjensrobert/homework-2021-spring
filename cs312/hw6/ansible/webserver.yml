@@ -1,0 +1,28 @@
+---
+- name: webserver
+  hosts: webservers
+  remote_user: root
+
+  tasks:
+    - name: install latest apache
+      apt:
+        name: apache2
+        state: latest
+
+    - name: create html template
+      template:
+        src: /ansible/index.html
+        dest: /var/www/html/index.html
+      notify:
+      - restart apache
+
+    - name: start apache
+      service:
+        name: apache2
+        state: started
+
+  handlers:
+    - name: restart apache
+      service:
+        name: apache2
+        state: restarted

@@ -1,0 +1,12 @@
+FROM dokken/debian-10
+
+RUN apt-get install -y ssh
+
+# disable host key checking (for convenience)
+RUN mkdir -p /root/.ssh
+RUN bash -c "echo -e 'Host *\n    StrictHostKeyChecking no' > /root/.ssh/config"
+
+# install ansible
+RUN apt-get install -y python ansible
+
+CMD ["/bin/systemd"]

@@ -1,0 +1,12 @@
+FROM dokken/debian-10
+
+# set root password for ssh login
+RUN echo 'root:root' | chpasswd
+
+# install ssh server
+RUN apt-get install -y ssh python
+
+# allow root password login
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+CMD ["/bin/systemd"]
