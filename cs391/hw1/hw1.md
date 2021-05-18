@@ -19,7 +19,7 @@ mailing list that supposedly fixes a possible double `free()` [@bad-patch]. Upon
 maintainers, namely J. Bruce Fields, Trond Myklebust, and Greg Kroah-Hartman, the patch was found to be invalid and was
 attempting to fix an issue that was not possible to have happen.
 
-Kroah-Hartman went on to fruther call out Pakki and their supervising research professor Kangjie Lu for submitting
+Kroah-Hartman went on to further call out Pakki and their supervising research professor Kangjie Lu for submitting
 "known-invalid" patches, ultimately deciding to ban any further patches from a University of Minnesota email address,
 as patches submitted from them were "submitted in bad-faith with the intent to cause problems" [@ban-response].
 Kroah-Hartman further decided to revert all previous patches accepted into the kernel source tree for the same reason
