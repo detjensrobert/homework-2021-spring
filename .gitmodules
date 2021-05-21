@@ -6,3 +6,6 @@
 	path = cs480/hw2
 	url = git@github.com:osu-cs480-sp21/assignment-2-detjensrobert.git
 	branch = main
+[submodule "cs480/hw3"]
+	path = cs480/hw3
+	url = git@github.com:osu-cs480-sp21/assignment-3-detjensrobert.git
