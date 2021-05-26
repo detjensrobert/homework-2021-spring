@@ -9,3 +9,6 @@
 [submodule "cs480/hw3"]
 	path = cs480/hw3
 	url = git@github.com:osu-cs480-sp21/assignment-3-detjensrobert.git
+[submodule "cs480/hw4"]
+	path = cs480/hw4
+	url = git@github.com:osu-cs480-sp21/assignment-4-detjensrobert.git
