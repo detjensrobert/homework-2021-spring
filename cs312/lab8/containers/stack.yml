@@ -1,0 +1,27 @@
+version: '3'
+
+networks:
+  ansible:
+
+services:
+  controller:
+    container_name: controller
+    image: ansible-controller:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile.controller
+    networks:
+      - ansible
+    volumes:
+      - '../ansible:/ansible'
+    privileged: true
+
+  client:
+    container_name: client
+    image: ansible-client:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    networks:
+      - ansible
+    privileged: true
