@@ -1,0 +1,4 @@
+---
+name: CS 312 Hardening tests
+supports:
+  - platform-family: linux
